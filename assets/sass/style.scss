@@ -389,6 +389,16 @@ html {
                 animation-fill-mode: both;
                 & .main_restaurant_menus_menu_cards_card_validate_icon {
                     visibility: visible;
+                    animation-name: rotation;
+                    animation-duration: 1s;
+                    @keyframes rotation {
+                        0% {
+                            transform: rotate(0deg);
+                        }
+                        100% {
+                            transform: rotate(360deg);
+                        }
+                    }
                 }
             }
         }
@@ -462,14 +472,6 @@ html {
                 color: #fff;
                 font-size: 22px;
                 visibility: hidden;
-                @keyframes rotation {
-                    0% {
-                        transform: rotate(0deg);
-                    }
-                    100% {
-                        transform: rotate(360deg);
-                    }
-                }
             }
         }
     }

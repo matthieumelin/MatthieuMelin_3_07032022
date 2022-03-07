@@ -396,6 +396,16 @@ html {
 }
 .main_restaurant .main_restaurant_menus_menu_cards_card:hover .main_restaurant_menus_menu_cards_card_validate .main_restaurant_menus_menu_cards_card_validate_icon {
   visibility: visible;
+  animation-name: rotation;
+  animation-duration: 1s;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @media screen and (min-width: 768px) {
   .main_restaurant .main_restaurant_menus_menu_cards_card {
@@ -470,14 +480,6 @@ html {
   color: #fff;
   font-size: 22px;
   visibility: hidden;
-}
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 .main_restaurant .main_restaurant_menus_menu_category {
   font-family: "Roboto", sans-serif;
