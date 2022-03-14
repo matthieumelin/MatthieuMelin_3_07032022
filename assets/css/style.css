@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 body {
-  margin: 0;
+  margin: 0 !important;
 }
 
 html {
@@ -262,13 +262,16 @@ html {
 }
 .restaurants .restaurants_card_body .restaurants_card_body_like:hover .restaurants_card_body_like_icon::before {
   content: "\f004";
-  color: #FF79DA;
   font-weight: bold;
   font-family: "Font Awesome 6 Free";
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .restaurants .restaurants_card_body .restaurants_card_body_like_icon {
   font-size: 22px;
   cursor: pointer;
+  color: #000;
 }
 
 /* Footer */
@@ -341,7 +344,9 @@ html {
 }
 .main_restaurant .main_restaurant_infos_like:hover .main_restaurant_infos_like_icon::before {
   content: "\f004";
-  color: #FF79DA;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: bold;
   font-family: "Font Awesome 6 Free";
 }
@@ -373,6 +378,7 @@ html {
   animation: fadeIn ease 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  cursor: pointer;
 }
 .main_restaurant .main_restaurant_menus_menu_cards_card:nth-child(2) {
   animation: fadeIn ease 1s;
@@ -393,6 +399,7 @@ html {
   animation-name: slide;
   animation-duration: 0.5s;
   animation-fill-mode: both;
+  cursor: pointer;
 }
 .main_restaurant .main_restaurant_menus_menu_cards_card:hover .main_restaurant_menus_menu_cards_card_validate .main_restaurant_menus_menu_cards_card_validate_icon {
   visibility: visible;
